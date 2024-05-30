@@ -1,0 +1,96 @@
+<html lang="en">
+
+<head>
+    <style>
+        .myDiv {
+            border: 5px outset red;
+            background-color: lightblue;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="myDiv">
+        <h2>This is a heading in a div element</h2>
+        <p>This is some text in a div element.</p>
+    </div>
+    <p>My mother has <span style="color:blue">blue</span> eyes.</p>
+</body>
+<header>
+    <h1>Three words</h1>
+    <nav>
+        <a>one word</a>
+        <a>one word</a>
+        <a>one word</a>
+        <a>one word</a>
+    </nav>
+</header>
+<main>
+    <header>
+        <h1>five words</h1>
+    </header>
+    <section>
+        <h2>three words</h2>
+        <p>forty-six words</p>
+        <p>forty-four words</p>
+    </section>
+    <section>
+        <h2>seven words</h2>
+        <p>sixty-eight words</p>
+        <p>forty-four words</p>
+    </section>
+</main>
+<footer>
+    <p>five words</p>
+</footer>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    Name: <input type="text" name="fname">
+    <input type="submit" value="Submit">
+</form>
+<h2>JavaScript Validation</h2>
+
+<p>Please input a number between 1 and 10:</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        // Get the value of the input field with id="numb"
+        let x = document.getElementById("numb").value;
+        // If x is Not a Number or less than one or greater than 10
+        let text;
+        if (isNaN(x) || x < 1 || x > 10) {
+            text = "Input not valid";
+        } else {
+            text = "Input OK";
+        }
+        document.getElementById("demo").innerHTML = text;
+    }
+</script>
+<p id="para">Some text here</p>
+<button onclick="changeColor('blue');">blue</button>
+<button onclick="changeColor('red');">red</button>
+<h2>Alternative text</h2>
+
+<p>The alt attribute should reflect the image content, so users who cannot see the image get an understanding of what
+    the image contains:</p>
+
+<img src="img_chania.jpg" alt="A narrow city street with flowers in Chania" width="460" height="345">
+<meta name="description" content="Buy high-quality bicycle parts and save money while riding through Nevada.">
+<img src="Cooking.jpg" alt="cooking pork and onions">
+<a href="http://somerandomwebsite.com/" rel="nofollow">your anchor text</a>
+<meta name="og:title" property="og:title" content="The Title of Your Article">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://yourwebsite.com/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</body>
+
+</html>
